@@ -13,6 +13,7 @@ public:
   virtual bool Step(World* world) = 0;
   // Clears and resets all data from the generator
   virtual void Clear(World* world) = 0;
+
   virtual ~MazeGeneratorBase() = default;
 };
 

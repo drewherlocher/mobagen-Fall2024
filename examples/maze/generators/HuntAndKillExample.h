@@ -13,6 +13,8 @@ private:
   Point2D randomStartPoint(World* world);
   std::vector<Point2D> getVisitables(World* w, const Point2D& p);
   std::vector<Point2D> getVisitedNeighbors(World* w, const Point2D& p);
+  void setWall(World* world, const Point2D& point, const Point2D& nextPoint);
+  //bool isSolvabl
 
 public:
   HuntAndKillExample() = default;
