@@ -12,6 +12,11 @@ public:
   virtual Point2D Move(World*) = 0;
 
   std::vector<Point2D> generatePath(World* w);
+  std::vector<Point2D> getNeighbors(World *w, const Point2D &p);
+
+  int heuristic(const Point2D &a, const Point2D &b);
+private:
+
 };
 
 #endif  // AGENT_H
